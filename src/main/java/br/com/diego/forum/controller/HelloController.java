@@ -1,15 +1,16 @@
 package br.com.diego.forum.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ResponseBody;
 
-@RestController
+@Controller
 public class HelloController {
 	
 	@RequestMapping("/")
-	private String hello() {
-		return "Olá mundo!";
-
+	@ResponseBody
+	public String hello() {
+		return "Hello World!";
 	}
 
 }

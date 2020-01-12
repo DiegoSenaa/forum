@@ -8,6 +8,6 @@ import br.com.diego.forum.modelo.Topico;
 
 public interface TopicoRepository extends JpaRepository<Topico, Long> {
 
-	List<Topico> findByCurso_Nome(String nomeCurso);
-	
+	List<Topico> findByCursoNome(String nomeCurso);
+
 }
